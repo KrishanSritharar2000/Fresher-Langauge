@@ -44,18 +44,20 @@ Fresher is a simple to learn programming language based on the familiar While fa
 
 The Fresher compiler will be written in Rust and will generate Web Assembly code. The compiler itself will then be compiled to Web Assembly and an online Fresher playground will be created to code, compile and run all the code in the browser. 
 
+---
 ## 2. How to run
 
 Use ```cargo run``` to compile and run.
 
+---
 ## 3. BNF
 
 The syntax of the Fresher Language is presented in Backus-Naur Form (BNF) with the following extensions from regex notation:
-
-* (x)? meaning optional, x can occur zero or one times
-* (x)+ meaning repeatable, x can occur one or more times
-* (x)* meaning optional and repeatable, x can occur zero or more times
-
+```
+ (x)? meaning optional                ->    x can occur zero or one times
+ (x)+ meaning repeatable              ->    x can occur one or more times
+ (x)* meaning optional and repeatable ->    x can occur zero or more times
+```
 ```
 〈program〉     ::= 〈func〉*〈stat〉
 

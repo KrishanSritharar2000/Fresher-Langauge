@@ -1,0 +1,8 @@
+View the assembly:
+    wat2wasm filename.wat -v
+
+Convert WAT -> WASM
+    wat2wasm filename.wasm -o filename2.wat
+
+Convert WASM -> WAT
+    wat2wasm filename.wat -o filename2.wasm
